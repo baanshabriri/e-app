@@ -1,0 +1,170 @@
+.nav-style {
+    background: rgba(255,255,255,0);
+    height: 25vh;
+    font-family: 'Lobster', 'cursive';
+ }
+ 
+ .sidenav {
+     height: 100vh;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color:rgb(255, 255, 255);
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 75px;
+     font-family: 'Permanent Marker', cursive;
+   }
+   
+   .sidenav a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #818181;
+     display: block;
+     transition: 0.3s;
+   }
+   
+   .sidenav a:hover {
+     color: #f1f1f1;
+   }
+   
+   .sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+   }
+ 
+   .blur:hover{
+     color: rgba(0,0,0,0.5);
+     cursor: pointer;
+   }
+.main-body{
+    background-image: url("https://i.ibb.co/023d3QM/chill-guy-high-tatras-91224.jpg");
+    background-position: center;
+    /* background-repeat: no-repeat;  */
+    background-size: cover; 
+    height: 45vh;
+    color: #f1f1f1;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#col-style-tag{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#row-style-top{
+    height:65vh;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.carousel-item img {
+    height: 65vh;   
+}
+
+.shop-section{
+    margin: 2em 1em 0 1em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container-shop{
+    height:45vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly
+}
+
+#apparels-section{
+    background-image: url("http://www.bitmarts.com/wp-content/uploads/2018/02/Best-Small-Outdoor-Companies-Gear-Patrol-Lead-Full.jpg");
+    width: 45%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    /* background-repeat: no-repeat;  */
+    background-size: cover;
+}
+
+#apparels-section h2 {
+    margin-top: 25%;
+    padding: 10px;
+    border: white solid 1px;
+    color: #f1f1f1;
+}
+
+#apparels-section h2:hover{
+    
+}
+
+#accessories-section{
+    background-image: url("https://amp.businessinsider.com/images/59e67ee79099245b018b46e5-750-563.jpg");
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#accessories-section h2{
+    margin-top: 25%;
+    padding: 10px;
+    border: white solid 1px;
+    color: #f1f1f1
+}
+
+.container-post{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container-post div{
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: black;
+    height: 45vh;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#footer-row{
+    height: 100%;
+
+}
+
+#footer-col{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center
+}
+
+/* #footer-col ul{
+    margin-top: 10%;
+} */
+
+#footer-col li{
+    margin-top: 20px;
+}
