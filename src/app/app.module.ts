@@ -8,8 +8,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
-import { from } from 'rxjs';
 import { FooterComponent } from './footer/footer.component';
+
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     HttpClientModule,
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,37 +1,166 @@
 .nav-style {
     background: rgba(255,255,255,0);
     height: 25vh;
-    font-family: 'Lobster', 'cursive';
+    /* font-family: 'Lobster', 'cursive'; */
+    position: absolute;
+    z-index: 999;
+ }
+
+ .nav-style2 {
+    background: rgba(255,255,255,1);
+    height: 10vh;
+    font-size: 10px;
+ }
+
+ #dropdown{
+    cursor: pointer;
+ }
+ #dropdown2{
+    cursor: pointer;
+ }
+
+ #dropdown:hover #menu{
+    display: block;
+    cursor: pointer;
+}
+
+ #menu{
+     height: auto;
+     max-height:500px;
+     width: 20%;
+     display: none;
+     position: absolute;
+     /* left: 0; */
+     /* top:10vh; */
+     background-color: white; 
+     border: 0px solid #000000;
+     border-radius: 0px 0px 4px 4px;
+ }
+
+ #menu :first-child {
+     margin-top: 30px
+ }
+
+ #menu li {
+     /* text-decoration: none; */
+     /* margin-left: 20px; */
+     color: rgba(0,0,0,.4);
+     margin: 0 20px 0 20px;
+     padding: 10px 0;
+}
+
+#menu li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background: #9CF5A6;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+  }
+ 
+ #menu li:hover:before,
+ #menu li:focus:before {
+   visibility: visible;
+   transform: scaleX(1);
+ }
+
+
+ #dropdown2:hover #menu2{
+    display: block;
+    cursor: pointer;
+}
+
+ #menu2{
+     height: auto;
+     max-height:500px;
+     width: 20%;
+     display: none;
+     position: absolute;
+     /* left: 0; */
+     /* top:10vh; */
+     background-color: white;
+     border-radius: 0px 0px 4px 4px;  
+ }
+
+ #menu2 :first-child {
+     margin-top: 30px
+ }
+
+ #menu2 li {
+     /* text-decoration: none; */
+     /* margin-left: 20px; */
+     color: rgba(0,0,0,.4);
+     margin: 0 20px 0 20px;
+     padding: 10px 0;
+}
+
+#menu2 li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background: #9CF5A6;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+  }
+ 
+ #menu2 li:hover:before,
+ #menu2 li:focus:before {
+   visibility: visible;
+   transform: scaleX(1);
+ }
+
+
+
+ .carousel-item img{
+     height: 100vh;
+     object-fit: cover;
  }
  
+ /* .nav-style-second {
+    background: rgba(255,255,255,0);
+    height: 5vh;
+    font-size: 20px;
+ } */
+
  .sidenav {
      height: 100vh;
      width: 0;
      position: fixed;
-     z-index: 1;
+     z-index: 99999;
      top: 0;
      left: 0;
      background-color:rgb(255, 255, 255);
      overflow-x: hidden;
      transition: 0.5s;
      padding-top: 75px;
-     font-family: 'Permanent Marker', cursive;
+     text-align: center
+     /* font-family: 'Permanent Marker', cursive; */
    }
    
-   .sidenav a {
+.sidenav a {
      padding: 8px 8px 8px 32px;
      text-decoration: none;
-     font-size: 25px;
+     font-size: 20px;
      color: #818181;
      display: block;
      transition: 0.3s;
+     opacity: 1;
    }
    
-   .sidenav a:hover {
+.sidenav a:hover {
      color: #f1f1f1;
+     
    }
    
-   .sidenav .closebtn {
+.sidenav .closebtn {
      position: absolute;
      top: 0;
      right: 25px;
@@ -39,132 +168,285 @@
      margin-left: 50px;
    }
  
-   .blur:hover{
+.blur:hover{
      color: rgba(0,0,0,0.5);
      cursor: pointer;
    }
+
+/* .row-shop-style{
+    width:95vw;
+    margin-top:20vh;
+    margin-left:2vw;
+} */
+
 .main-body{
-    background-image: url("https://i.ibb.co/023d3QM/chill-guy-high-tatras-91224.jpg");
-    background-position: center;
+    /* background-image: url("../../assets/action-adult-adventure-356808.jpg"); */
+    /* background-position: center; */
     /* background-repeat: no-repeat;  */
-    background-size: cover; 
-    height: 45vh;
+    /* background-size: cover;  */
+    /* height: 100vh; */
     color: #f1f1f1;
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
+    margin: 0 0 0 0;
+    padding: 0;
 }
 
-#col-style-tag{
+.second-section-img{
+    height: 50vh;
+}
+
+.featured-img-box{
+    /* background-image: url("../../assets/adventure-attraction-blurry-618545.jpg");
+    background-position: center;
+    background-size: cover; */
+    /* width: 500px;
+    height: 400px; */
+    /* margin-top: 100px; */
+    padding: 0;
+}
+
+.featured-img-box img{
     width: 100%;
-    height: 100%;
-    background-color: #f1f1f1;
-    color: black;
+    /* height: auto; */
+    max-width: 450px;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+}
+
+.destination-panel{
+    background-image: url("../../assets/adventure-attraction-blurry-618545.jpg");
+    width:inherit;
+    height:62.5vh;
+    background-position: center;
+    background-size: cover; 
+    color: #EDECEC;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    font-family: 'Permanent Marker', cursive;
-}
-
-#row-style-top{
-    height:65vh;
-    font-family: 'Permanent Marker', cursive;
-}
-
-.carousel-item img {
-    height: 65vh;   
-}
-
-.shop-section{
-    margin: 2em 1em 0 1em;
-    font-family: 'Permanent Marker', cursive;
-}
-
-.container-shop{
-    height:45vh;
-    display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Lobster', 'cursive'; */
 }
 
-#apparels-section{
-    background-image: url("http://www.bitmarts.com/wp-content/uploads/2018/02/Best-Small-Outdoor-Companies-Gear-Patrol-Lead-Full.jpg");
-    width: 45%;
-    /* height: 100%; */
+.store-panel{
+    width: inherit;
+}
+
+
+.store-panel-row{
+    margin: 0;
+    padding: 0;
+}
+
+.store-panel-col{
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    /* width: inherit; */
+}
+
+.store-panel-men{
+    background-image: url("../../assets/alone-cold-daylight-351978.jpg");
+    background-position: center;
+    background-size: cover; 
+    color: #EDECEC;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Lobster', 'cursive'; */
+}
+
+.store-panel-women{
+    background-image: url("../../assets/adult-adventure-climb-414017.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #EDECEC;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Lobster', 'cursive'; */
+}
+
+.come-in {
+    transform: translateX(1500px);
+    animation: come-in 1s ease 0.15s forwards;
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  }
+  .come-in:first-child {
+    animation-duration: 0.6s; /* So they look staggered */
+  }
+
+  .come-in:nth-child(2) {
+    animation-duration: 0.8s; /* So they look staggered */
+  }
+
+  .come-in:nth-child(3) {
+    animation-duration: 1s; /* So they look staggered */
+  }
+  
+  @keyframes come-in {
+    to { transform: translateX(0); }
+  }
+
+.third-section{
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    /* font-family: 'Lobster', 'cursive'; */
+    margin: 15vh 0 15vh 0;
+    padding: 0;
+}
+
+.post-panel{
+    /* margin-top: 0px;
+    margin-right:70px; */
+    width: 200px;
+    height: 50vh;
+    border: black solid 1px;
+    position: absolute;
+    right:0;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    background-position: center;
-    /* background-repeat: no-repeat;  */
-    background-size: cover;
-}
-
-#apparels-section h2 {
-    margin-top: 25%;
-    padding: 10px;
-    border: white solid 1px;
-    color: #f1f1f1;
-}
-
-#apparels-section h2:hover{
-    
-}
-
-#accessories-section{
-    background-image: url("https://amp.businessinsider.com/images/59e67ee79099245b018b46e5-750-563.jpg");
-    width: 45%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
-}
-
-#accessories-section h2{
-    margin-top: 25%;
-    padding: 10px;
-    border: white solid 1px;
+    justify-content: center;
+    z-index: -999;
+    background-color: black;
     color: #f1f1f1
 }
 
-.container-post{
-    display: flex;
+.insta-gallery{
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-evenly;
-    font-family: 'Permanent Marker', cursive;
+    justify-content: center;
+    margin: 7.5vh 0 15vh 0;
+    /* font-family: 'Permanent Marker', cursive; */
 }
 
-.container-post div{
-    margin-top: 10px;
+.insta-gallery img{
+    width: 280px;
+    height: 210px;
+    border: #f1f1f1 4px solid;
+    
 }
 
-.footer{
-    background-color: black;
-    height: 45vh;
-    color: white;
-    font-family: 'Permanent Marker', cursive;
+.insta-gallery img:hover{
+    animation: scale 200ms ease-in-out forwards;
 }
 
-#footer-row{
-    height: 100%;
+@keyframes scale {
+    to {
+        transform: scale(2)
+    }
+}
+
+.mid-text{
+    /* font-family: 'Permanent Marker', cursive; */
+}
+
+.space-bar{
+    /* font-family: 'Permanent Marker', cursive; */
+    margin: 0 0 7.5vh 0;
+}
+
+.row-style{
+    width: 95%;
 
 }
 
-#footer-col{
-    height: 100%;
+.col-style{
+    text-align: center;
+}
+
+.post-latest{
+    padding: 0 10vw 10vh 10vw;
+    background-color: #EDECEC;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    font-size: 20px;
+}
+
+.post-heading{
+    display: flex;
+}
+
+.card-deck{
+    margin: 6.0vh 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.card{
+    border-radius: 0!important;
+    min-width: 325px;
+    max-width: 325px;
+    margin-bottom: 10px;
+}
+
+.card img{
+    border-radius: 0!important;
+    height: 250px;
+}
+
+.card-body{
+    border-radius: 0!important;
+    height: 200px;
+}
+
+.footer{
+    display: grid;
+    background-color: black;
+    color: #EDECEC;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 250px;
+}
+
+.footer-sec-one{
+    display: flex;
     justify-content: center;
-    text-align: center
+    align-items: center;
+    font-weight: bold
 }
 
-/* #footer-col ul{
-    margin-top: 10%;
-} */
-
-#footer-col li{
-    margin-top: 20px;
+.footer-sec-one ul li {
+    padding: 10px;
 }
+
+.footer-sec-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.footer-sec-two ul li {
+    padding: 5px;
+    font-size: 1.25em
+}
+
+.footer-sec-three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.footer-sec-three ul li {
+    padding: 5px;
+}
+
+
+
+
