@@ -1,9 +1,15 @@
+@font-face {
+    font-family: Selima;
+    src: url("../../assets/Selima.otf") format("opentype");
+}
+
 .nav-style {
     background: rgba(255,255,255,0);
     height: 25vh;
     /* font-family: 'Lobster', 'cursive'; */
     position: absolute;
     z-index: 999;
+    font-family: Selima;
  }
 
  .nav-style2 {
@@ -265,6 +271,18 @@
     /* font-family: 'Lobster', 'cursive'; */
 }
 
+.destination-panel input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+.destination-panel input:hover{
+    background-color: rgba(0,0,0,.4);
+    transform: scaleX()
+}
 
 .store-panel{
     width: inherit;
@@ -293,7 +311,7 @@
     flex-wrap: wrap;
     /* text-align: left; */
     justify-content: center;
-    padding-left: 22.5vw; 
+    padding-left: 10vw; 
     /* font-family: 'Lobster', 'cursive'; */
 }
 
@@ -483,6 +501,9 @@
 .footer-sec-three ul li {
     padding: 5px;
 }
+
+
+
 
 
 

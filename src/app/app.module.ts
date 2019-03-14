@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -25,6 +26,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     HttpClientModule,
     AppRoutingModule,
     BrowserModule,
+    BrowserAnimationsModule,
     SlickCarouselModule
   ],
   providers: [],

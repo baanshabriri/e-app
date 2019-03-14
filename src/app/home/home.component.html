@@ -25,7 +25,7 @@
 
 <div class="main">
     <div class="main-body">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" @fade>
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -42,7 +42,7 @@
                         <div class="col">
                             <div style="text-align:center;">
                                 <span>
-                                    <h1 class=" ">Trekmonk</h1>
+                                    <h1 class="display-1">Trekmonk</h1>
                                 </span>
                             </div>
                         </div>
@@ -172,22 +172,25 @@
     </div>
     </section>
 
-    <div>
+    <section>
         <div class="store-panel">
             <div class="row store-panel-row">
                 <div class="col-12 store-panel-col store-panel-men">
-                    <h1 style="">Shop</h1>
-                    <h4 style="">Men</h4>
-                    <h4 style="">Women</h4>
+                    <div class="">
+                        <h1 class="display-4" style="font-weight: 500;font-family: 'Volkhov', serif;" id="shop">SHOP</h1>
+                        <h4 class="" style="font-weight: 500;font-family: 'Volkhov', serif;" id="men">Men</h4>
+                        <h4 class="" style="font-weight: 500;font-family: 'Volkhov', serif;" id="women">Women</h4>
+                    </div>
                 </div>
                 <!-- <div class="col-6 store-panel-col store-panel-women">
                     <h1 style="background-color: rgba(0, 0, 0, 0.5);width: 100%;">Women's Collection</h1>
                 </div> -->
             </div>
         </div>
+    </section>
 
         <div class="destination-panel">
-            <h2 style="">Your Next Destination ?</h2>
+            <h2 style="font-family: Selima;font-size: 50px">Your Next Destination ?</h2>
             <input type="text" style="padding:5px;margin: 5px">
             <input type="text" style="padding:5px;margin: 5px">
         </div>
@@ -316,4 +319,5 @@
             </ul>
         </div>
     </div>
-</div>
+<!-- </div> -->
+
