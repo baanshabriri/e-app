@@ -23,8 +23,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
       $("#sidebarToggle").click(function(){
-       $("#mySidenav").width("100vw");
-       $("#mySidenav").animate({opacity:0.9},200)
+       $("#mySidenav").width("20vw");
+       $("#mySidenav").animate({opacity:1},200)
      })
  
      $("#sidebarBack").click(function(){
