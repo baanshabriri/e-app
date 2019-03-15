@@ -181,9 +181,9 @@
 
 .main-body{
     /* background-image: url("../../assets/action-adult-adventure-356808.jpg"); */
-    /* background-position: center; */
-    /* background-repeat: no-repeat;  */
-    /* background-size: cover;  */
+    /* background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;  */
     /* height: 100vh; */
     color: #f1f1f1;
     /* font-family: 'Permanent Marker', cursive; */
@@ -195,32 +195,67 @@
     height: 50vh;
 }
 
-.featured-img-box{
-    /* background-image: url("../../assets/adventure-attraction-blurry-618545.jpg");
-    background-position: center;
-    background-size: cover; */
-    /* width: 500px;
-    height: 400px; */
-    /* margin-top: 100px; */
-    padding: 0;
+#featured-section div{
+    display: flex;
 }
 
-.featured-img-box img{
+#featured-section div div{
+    position: relative;
+    right:50%;
+    color: #000000;
+    align-self: flex-end;
+}
+
+.featured-header{
+    grid-area:header;
+}
+
+.featured-img1{
+    background-image: url("../../assets/architecture-backpack-building-1905975.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    grid-area:footer;
+}
+.featured-img2{
+    background-image: url("../../assets/coat-cold-female-54206.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    grid-area:footer2;
+}
+.featured-img3{
+    background-image: url("../../assets/back-background-blur-747470.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    grid-area:footer3;
+}
+
+#featured-section{ 
+    display: grid;
+    /* color: #EDECEC; */
+    text-align: center;
+    grid-template-columns: 33.33% 33.33% 33.34%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "header header header"
+    "footer footer2 footer3";
+    height: 85vh;
+}
+
+#featured-section img{
     width: 100%;
-    /* height: auto; */
-    max-width: 450px;
-    height: 300px;
-    padding: 0;
-    margin: 0;
+    height: 100%;
 }
 
 .destination-panel{
-    background-image: url("../../assets/adventure-attraction-blurry-618545.jpg");
+    background-image: url("../../assets/blank-destination-geography-437646.jpg");
     width:inherit;
-    height:62.5vh;
+    height:85vh;
     background-position: center;
     background-size: cover; 
-    color: #EDECEC;
+    /* color: #EDECEC; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -229,6 +264,7 @@
     align-items: center;
     /* font-family: 'Lobster', 'cursive'; */
 }
+
 
 .store-panel{
     width: inherit;
@@ -241,23 +277,23 @@
 }
 
 .store-panel-col{
-    height: 60vh;
+    height: 85vh;
     margin: 0;
     padding: 0;
     /* width: inherit; */
 }
 
 .store-panel-men{
-    background-image: url("../../assets/alone-cold-daylight-351978.jpg");
+    background-image: url("../../assets/apparel-casual-clothes-934070.jpg");
     background-position: center;
     background-size: cover; 
-    color: #EDECEC;
+    /* color: #EDECEC; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    text-align: center;
+    /* text-align: left; */
     justify-content: center;
-    align-items: center;
+    padding-left: 22.5vw; 
     /* font-family: 'Lobster', 'cursive'; */
 }
 
@@ -327,7 +363,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 7.5vh 0 15vh 0;
+    margin: 7.5vh 0 7.5vh 0;
     /* font-family: 'Permanent Marker', cursive; */
 }
 
@@ -391,6 +427,7 @@
     min-width: 325px;
     max-width: 325px;
     margin-bottom: 10px;
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.75);
 }
 
 .card img{
@@ -405,8 +442,8 @@
 
 .footer{
     display: grid;
-    background-color: black;
-    color: #EDECEC;
+    /* background-color: black; */
+    /* color: #EDECEC; */
     grid-template-columns: auto auto auto;
     grid-template-rows: 250px;
 }
