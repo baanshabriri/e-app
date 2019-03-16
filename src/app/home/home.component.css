@@ -256,12 +256,13 @@
 }
 
 .destination-panel{
-    background-image: url("../../assets/blank-destination-geography-437646.jpg");
+    background-image: url("../../assets/alone-cold-daylight-351978.jpg");
     width:inherit;
     height:85vh;
     background-position: center;
-    background-size: cover; 
-    /* color: #EDECEC; */
+    background-size: auto; 
+    color: #EDECEC;
+    font-size: 2.5em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -304,7 +305,8 @@
 .store-panel-men{
     background-image: url("../../assets/apparel-casual-clothes-934070.jpg");
     background-position: center;
-    background-size: cover; 
+    background-size: auto;
+    /* background-attachment: fixed; */
     /* color: #EDECEC; */
     display: flex;
     flex-direction: column;
@@ -315,23 +317,22 @@
     /* font-family: 'Lobster', 'cursive'; */
 }
 
-.come-in {
+/* .come-in {
     transform: translateX(1500px);
     animation: come-in 1s ease 0.15s forwards;
-   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   }
   .come-in:first-child {
-    animation-duration: 0.6s; /* So they look staggered */
+    animation-duration: 0.6s;
   }
 
   .come-in:nth-child(2) {
-    animation-duration: 0.8s; /* So they look staggered */
+    animation-duration: 0.8s;
   }
 
   .come-in:nth-child(3) {
-    animation-duration: 1s; /* So they look staggered */
+    animation-duration: 1s;
   }
-  
+   */
   @keyframes come-in {
     to { transform: translateX(0); }
   }

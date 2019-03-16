@@ -186,7 +186,6 @@ export class HomeComponent implements OnInit {
 
   public chunkArr = () => {
     let j = 0;
-    console.log(this.group);
     for (let i = 0; j < this.group.length; i++) {
       j = i * 3;
       if (this.group.slice(j, j + 3).length != 0) {
@@ -199,7 +198,6 @@ export class HomeComponent implements OnInit {
   public getPostList = () => {
     if (this.counter < this.group.length) {
       for (let i = this.counter; i < this.counter + 1; i++) {
-        console.log(this.displayData);
         this.displayData.push(this.groupChunk[i])
       }
       this.counter += 1
