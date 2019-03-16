@@ -315,20 +315,6 @@
     /* font-family: 'Lobster', 'cursive'; */
 }
 
-.store-panel-women{
-    background-image: url("../../assets/adult-adventure-climb-414017.jpg");
-    background-position: center;
-    background-size: cover;
-    color: #EDECEC;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    /* font-family: 'Lobster', 'cursive'; */
-}
-
 .come-in {
     transform: translateX(1500px);
     animation: come-in 1s ease 0.15s forwards;
@@ -376,13 +362,13 @@
     color: #f1f1f1
 }
 
-.insta-gallery{
+/* .insta-gallery{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin: 7.5vh 0 7.5vh 0;
-    /* font-family: 'Permanent Marker', cursive; */
+    font-family: 'Permanent Marker', cursive;
 }
 
 .insta-gallery img{
@@ -400,7 +386,7 @@
     to {
         transform: scale(2)
     }
-}
+} */
 
 .mid-text{
     /* font-family: 'Permanent Marker', cursive; */
@@ -420,17 +406,14 @@
     text-align: center;
 }
 
-.post-latest{
+/* .post-latest{
     padding: 0 0 10vh 0;
     background-color: #EDECEC;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
+} */
 
-.post-heading{
-    display: flex;
-}
 
 .card-deck{
     margin: 0;
@@ -501,25 +484,68 @@
 
 .post-section{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows:10%;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows:auto;
     grid-column-gap:30px;
+    grid-row-gap: 30px;
+    padding: 0;
+    justify-content: center;	
+    text-align: center
 }
 
+/* .post-card{
+    height: 100%;
+    width: 100%;
+    
+} */
+
+.post-heading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2vh
+}
+
+.post-body{
+    margin-bottom: 2vh;
+    padding: 25px 100px 25px 100px;
+    transition: box-shadow 0.3s ease-in;
+}
+
+.post-img:hover + .post-body{
+    /* animation: boxAnim 1s ; */
+    box-shadow: 0px 7px 15px 6px rgba(0,0,0,0.26);
+}
+
+
+/* @keyframes boxAnim{
+    0%  {box-shadow:0}
+    100% {box-shadow: 0px 7px 15px 6px rgba(0,0,0,0.26);}
+} */
+
 .post-img{
-    height: 450px;
+    height: 400px;
+    overflow: hidden;
+    background-color: #000000;
 }
 
 .post-img img{
     height: 100%;
+    transition: all 0.6s;
+}
+
+.post-img:hover img{
+    transform: scale(1.5);
+    opacity: 0.7;
+    
+    /* box-shadow: 0px 7px 15px 6px rgba(0,0,0,0.26); */
 }
 
 .button-style{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    padding: 25px;
 }
-
-
 
 
 
