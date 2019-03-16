@@ -421,7 +421,7 @@
 }
 
 .post-latest{
-    padding: 0 10vw 10vh 10vw;
+    padding: 0 0 10vh 0;
     background-color: #EDECEC;
     display: flex;
     flex-direction: column;
@@ -433,11 +433,8 @@
 }
 
 .card-deck{
-    margin: 6.0vh 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center
+    margin: 0;
+    padding: 0;
 }
 
 .card{
@@ -502,7 +499,25 @@
     padding: 5px;
 }
 
+.post-section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:10%;
+    grid-column-gap:30px;
+}
 
+.post-img{
+    height: 450px;
+}
+
+.post-img img{
+    height: 100%;
+}
+
+.button-style{
+    display: flex;
+    justify-content: center
+}
 
 
 

@@ -1,27 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import { trigger, state, transition, style, animate } from '@angular/animations';
-require('slick-carousel');
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
-    trigger('fade',[
-      // state(),
-      transition('* => void', [
-        style({opacity:1}),
-        animate(2000,style({opacity:0}))
-      ])
-    ]),
   ]
 })
 export class HomeComponent implements OnInit {
+  public group = [];
+  public groupChunk = [];
+  public subGroup:Number = 3;
+  showPost: boolean = false;
+  displayData = [];
+  counter:number = 1;
 
   constructor() { }
 
   ngOnInit() {
+
+    this.cardF(),
+
       $("#sidebarToggle").click(function(){
        $("#mySidenav").width("20vw");
        $("#mySidenav").animate({opacity:1},200)
@@ -53,6 +53,156 @@ export class HomeComponent implements OnInit {
       $("#menu2 li").css({visibility: 'visible',
        transform: 'scaleX('+1+')'})
     })
-    
+  }
+
+  public card = [
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    }, 
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    },
+    {
+      cardTitle: "hello",
+      cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    }
+  ]
+
+  /**
+   * card:any
+   */
+  public cardF: any = () => {
+    for (let i = 0; i < this.card.length; i++) {
+      if (i >= this.card.length - 1) {
+        this.chunkArr();
+      } else {
+        this.group.push(this.card[i])
+      }
+    }
+  }
+
+  public chunkArr = () => {
+    let j = 0;
+    console.log(this.group);
+    for (let i = 0; j < this.group.length; i++) {
+      j = i * 3;
+      if (this.group.slice(j, j + 3).length != 0) {
+        this.groupChunk.push(this.group.slice(j, j + 3))
+      }
+    }
+    this.displayData.push(this.groupChunk[0])
+  }
+
+  public getPostList = () => {
+    if(this.counter < this.group.length){
+      for (let i = this.counter; i < this.counter+1; i++) {
+        console.log(this.displayData);
+        this.displayData.push(this.groupChunk[i])
+      }
+      this.counter+=1
+    }
+      else{
+        
+      }
   }
 }

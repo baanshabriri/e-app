@@ -23,10 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss"
             ],
             "scripts": [
-              
+              "node_modules/slick-carousel/slick/slick.min.js"
             ],
             "es5BrowserSupport": true
           },
@@ -85,7 +87,8 @@
               "src/styles.css"
             ],
             "scripts": [
-             
+              "node_modules/slick-carousel/slick/slick.min.js"
+              
             ],
             "assets": [
               "src/favicon.ico",
