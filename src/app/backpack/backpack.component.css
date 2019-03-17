@@ -1,9 +1,9 @@
 .grid-container{
     display: grid;
-    grid-template-columns: auto 25%;
+    grid-template-columns: 15% auto;
     /* grid-template-rows: ; */
     grid-template-areas: 
-    "sec1 sec2";
+    ". sec1 sec2";
     height: 100vh;
 }
 
