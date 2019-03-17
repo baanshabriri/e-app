@@ -12,4 +12,68 @@ export class BackpackComponent implements OnInit {
   ngOnInit() {
   }
 
+  public bagsLink = [
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    },
+    {
+      link:"../../assets/backpack-bag-1546003.png",
+      title:"Bag Title",
+      price:"123"
+    }
+  ]
+
 }

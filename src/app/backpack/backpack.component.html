@@ -1,23 +1,66 @@
-<div class="row no-gutters">
-  <div class="col-2" style="border: 1px solid #000;">
-    <ul>
-      <li>Filter By</li>
-      <li>Men</li>
-      <li>Women</li>
-      <li>Price</li>
-      <li>Color</li>
-      <li>Volume</li>
-      <li>Features</li>
-    </ul>
-    <ul>
-      <li>Sort By</li>
-      <li>Ascending</li>
-      <li>Descending</li>
-      <li>Rating</li>
-      <li>Popularity</li>
-      <li>Newest</li>
-    </ul>
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg nav-style2">
+  <!-- <a class="navbar-brand" href="#" style="font-size:2em">Trekmonk</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" style="font-size:1.75em">
+          <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" id="dropdown">
+              <a class="nav-link">Men</a>
+          </li>
+          <li class="nav-item" id="dropdown2">
+              <a class="nav-link">Women</a>
+          </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto" style="font-size:1.75em">
+          <li class="nav-item">
+              <a class="nav-link" href="#">Account</a>
+          </li>
+          <li class="nav-item" style="margin: 8px">
+              <i class="fas fa-search"></i>
+          </li>
+          <li class="nav-item" style="margin: 8px">
+              <i class="fas fa-shopping-cart"></i>
+          </li>
+      </ul>
+
   </div>
-  <div class="col-6" style="border: 1px solid #000;">IAM8</div>
-  <div class="col-4" style="border: 1px solid #000;">IAM2</div>
+</nav>
+
+<div class="grid-container">
+    <!-- <div class="list-section" style="position:fixed">
+      <ul class="list-unstyled">
+        <li>Filter By</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>Price</li>
+        <li>Color</li>
+        <li>Volume</li>
+        <li>Features</li>
+      </ul>
+      <ul class="list-unstyled">
+        <li>Sort By</li>
+        <li>Ascending</li>
+        <li>Descending</li>
+        <li>Rating</li>
+        <li>Popularity</li>
+        <li>Newest</li>
+      </ul>
+    </div> -->
+    <div class="product-list container-fluid" >
+      <div class="product-list-grid-container">
+        <div class="product-list-grid-container-item" *ngFor="let i of bagsLink">
+          <img src={{i.link}} class="d-block w-100" alt="...">
+          <h3>Title: {{i.title}}</h3>
+          <p>Price: {{i.price}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="product-info" style="border: 1px solid #000;">IAM4
+    </div>
 </div>
