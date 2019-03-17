@@ -25,7 +25,7 @@
 
 <div class="main">
     <div class="main-body">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" @fade>
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -42,7 +42,7 @@
                         <div class="col">
                             <div style="text-align:center;">
                                 <span>
-                                    <h1 class=" ">Trekmonk</h1>
+                                    <h1 class="display-1">Trekmonk</h1>
                                 </span>
                             </div>
                         </div>
@@ -76,118 +76,120 @@
         </div>
 
     </div>
-</div>
-<div>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg nav-style2">
-        <!-- <a class="navbar-brand" href="#" style="font-size:2em">Trekmonk</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav" style="font-size:1.75em">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item" id="dropdown">
-                    <a class="nav-link">Men</a>
-                    <ul class="list-unstyled" id="menu">
-                        <li>Tshirts</li>
-
-                        <li>Fleece Insulation</li>
-
-                        <li>Down Insulation</li>
-
-                        <li>Raingear</li>
-
-                        <li>Pants</li>
-
-                        <li>Softshell</li>
-                    </ul>
-                </li>
-                <li class="nav-item" id="dropdown2">
-                    <a class="nav-link">Women</a>
-                    <ul class="list-unstyled" id="menu2">
-                        <li>Tshirts</li>
-
-                        <li>Fleece Insulation</li>
-
-                        <li>Down Insulation</li>
-
-                        <li>Raingear</li>
-
-                        <li>Pants</li>
-
-                        <li>Softshell</li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Backpacks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Accessories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Guide</a>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav ml-auto" style="font-size:1.75em">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Account</a>
-                </li>
-                <li class="nav-item" style="margin: 8px">
-                    <i class="fas fa-search"></i>
-                </li>
-                <li class="nav-item" style="margin: 8px">
-                    <i class="fas fa-shopping-cart"></i>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-
-    <section class="featuredSection" id="featured-section">
-        <h3 class="featured-header" style="margin:0;padding:0">Featured Products</h3>
-       <div class="featured-img1"><img src="" alt="">
-            <div>
-                <h4>Title</h4>
-                <h4>Price</h4>
-            </div>
-        </div>
-       <div class="featured-img2"><img src="" alt="">
-        <div>
-            <h4>Title</h4>
-            <h4>Price</h4>
-        </div>
-    </div>
-       <div class="featured-img3"><img src="" alt="">
-        <div>
-            <h4>Title</h4>
-            <h4>Price</h4>
-        </div>
-    </div>
-    </section>
-
     <div>
-        <div class="store-panel">
-            <div class="row store-panel-row">
-                <div class="col-12 store-panel-col store-panel-men">
-                    <h1 style="">Shop</h1>
-                    <h4 style="">Men</h4>
-                    <h4 style="">Women</h4>
-                </div>
-                <!-- <div class="col-6 store-panel-col store-panel-women">
-                    <h1 style="background-color: rgba(0, 0, 0, 0.5);width: 100%;">Women's Collection</h1>
-                </div> -->
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg nav-style2">
+            <!-- <a class="navbar-brand" href="#" style="font-size:2em">Trekmonk</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="font-size:1.75em">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" id="dropdown">
+                        <a class="nav-link">Men</a>
+                        <ul class="list-unstyled" id="menu">
+                            <li>Tshirts</li>
+
+                            <li>Fleece Insulation</li>
+
+                            <li>Down Insulation</li>
+
+                            <li>Raingear</li>
+
+                            <li>Pants</li>
+
+                            <li>Softshell</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="dropdown2">
+                        <a class="nav-link">Women</a>
+                        <ul class="list-unstyled" id="menu2">
+                            <li>Tshirts</li>
+
+                            <li>Fleece Insulation</li>
+
+                            <li>Down Insulation</li>
+
+                            <li>Raingear</li>
+
+                            <li>Pants</li>
+
+                            <li>Softshell</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink='/backpacks' >Backpacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Guide</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto" style="font-size:1.75em">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Account</a>
+                    </li>
+                    <li class="nav-item" style="margin: 8px">
+                        <i class="fas fa-search"></i>
+                    </li>
+                    <li class="nav-item" style="margin: 8px">
+                        <i class="fas fa-shopping-cart"></i>
+                    </li>
+                </ul>
+
             </div>
-        </div>
+        </nav>
+
+        <section class="featuredSection" id="featured-section">
+            <h3 class="featured-header" style="margin:0;padding:0">Featured Products</h3>
+            <div class="featured-img1"><img src="" alt="">
+                <div>
+                    <h4>Title</h4>
+                    <h4>Price</h4>
+                </div>
+            </div>
+            <div class="featured-img2"><img src="" alt="">
+                <div>
+                    <h4>Title</h4>
+                    <h4>Price</h4>
+                </div>
+            </div>
+            <div class="featured-img3"><img src="" alt="">
+                <div>
+                    <h4>Title</h4>
+                    <h4>Price</h4>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="store-panel">
+                <div class="row store-panel-row">
+                    <div class="col-12 store-panel-col store-panel-men">
+                        <div class="">
+                            <h1 class="display-4" style="font-weight: 500;font-family: 'Volkhov', serif;" id="shop">SHOP</h1>
+                            <h4 class="" style="font-weight: 500;font-family: 'Volkhov', serif;" id="men">Men</h4>
+                            <h4 class="" style="font-weight: 500;font-family: 'Volkhov', serif;" id="women">Women</h4>
+                        </div>
+                    </div>
+                    <!-- <div class="col-6 store-panel-col store-panel-women">
+                        <h1 style="background-color: rgba(0, 0, 0, 0.5);width: 100%;">Women's Collection</h1>
+                    </div> -->
+                </div>
+            </div>
+        </section>
 
         <div class="destination-panel">
-            <h2 style="">Your Next Destination ?</h2>
+            <h2 style="font-family: Selima;font-size: 50px">Your Next Destination ?</h2>
             <input type="text" style="padding:5px;margin: 5px">
             <input type="text" style="padding:5px;margin: 5px">
         </div>
@@ -196,71 +198,28 @@
         <div class="post-latest">
             <div class="post-heading">
                 <h2 style="padding:50px 0 0 0;">Xpedition Series</h2>
-                <h5 style="padding:55px 0 0 0;margin-left:auto;">See All <i class="fas fa-angle-double-right" style="margin:2px;padding:2px"></i></h5>
             </div>
 
-            <div class="card-deck">
-                <div class="card">
-                    <img src="../../assets/trekking-hiking-group-alpine-53214.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <section>
+                <div *ngFor="let i of displayData">
+                    <div class="post-section animated fadeIn">
+                        <div class="post-card" *ngFor="let x of i">
+                            <div class="post-img"><img src={{x.cardLink}} class="card-img-top" alt="..."></div>
+                            <div class="post-body">
+                                <h5 class="post-title">{{x.cardTitle}}</h5>
+                                <p class="post-info">{{x.cardInfo}}</p>
+                                <p class="post-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../../assets/pexels-photo-264151.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../../assets/adventure-attraction-blurry-618545.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../../assets/activity-adventure-backlit-450062.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../../assets/pexels-photo-264151.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../../assets/adventure-attraction-blurry-618545.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-            </div>
+                <footer class="button-style">
+                    <button class="" (click)="getPostList()">Load More</button>
+                </footer>
+            </section>
         </div>
 
-        <div class="mid-text">
-            <h1 style="justify-content: center;display: flex;align-items: center;margin-top: 7.5vh">Share Your Stories</h1>
-        </div>
-        <div class="insta-gallery container-fluid d-flex flex-row">
+        <!-- <div class="insta-gallery container-fluid d-flex flex-row">
             <div style="width: 280px;height: 210px;text-align: center;align-items: center;display: flex;align-items: center;flex-direction: column;border: 1px solid black;border-radius: 4px">
                 <p style="margin:20px 0 0 0;padding: 0">Find us</p>
                 <i class="fab fa-instagram" style="font-size: 100px;">
@@ -276,11 +235,12 @@
             <div style="width: 280px;height: 210px;text-align: center;display: flex;align-items: center;justify-content: center">
                 <p style="margin:0;">Load more</p>
             </div>
-        </div>
+        </div> -->
+
     </div>
 
     <hr>
-    
+
     <div class="footer">
         <div class="footer-sec-one">
             <ul class="list-unstyled">
@@ -317,3 +277,5 @@
         </div>
     </div>
 </div>
+
+<!-- </div> -->
