@@ -16,63 +16,38 @@ export class BackpackComponent implements OnInit {
     {
       link:"../../assets/backpack-bag-1546003.png",
       title:"Bag Title",
-      price:"123"
+      price:"123",
+      info:"A brief Info"
     },
     {
       link:"../../assets/backpack-bag-1546003.png",
       title:"Bag Title",
-      price:"123"
+      price:"123",
+      info:"A brief Info"
     },
     {
       link:"../../assets/backpack-bag-1546003.png",
       title:"Bag Title",
-      price:"123"
+      price:"123",
+      info:"A brief Info"
     },
     {
       link:"../../assets/backpack-bag-1546003.png",
       title:"Bag Title",
-      price:"123"
+      price:"123",
+      info:"A brief Info"
     },
     {
       link:"../../assets/backpack-bag-1546003.png",
       title:"Bag Title",
-      price:"123"
+      price:"123",
+      info:"A brief Info"
     },
     {
       link:"../../assets/backpack-bag-1546003.png",
       title:"Bag Title",
-      price:"123"
-    },
-    {
-      link:"../../assets/backpack-bag-1546003.png",
-      title:"Bag Title",
-      price:"123"
-    },
-    {
-      link:"../../assets/backpack-bag-1546003.png",
-      title:"Bag Title",
-      price:"123"
-    },
-
-    {
-      link:"../../assets/backpack-bag-1546003.png",
-      title:"Bag Title",
-      price:"123"
-    },
-    {
-      link:"../../assets/backpack-bag-1546003.png",
-      title:"Bag Title",
-      price:"123"
-    },
-    {
-      link:"../../assets/backpack-bag-1546003.png",
-      title:"Bag Title",
-      price:"123"
-    },
-    {
-      link:"../../assets/backpack-bag-1546003.png",
-      title:"Bag Title",
-      price:"123"
+      price:"123",
+      info:"A brief Info"
     }
   ]
 
