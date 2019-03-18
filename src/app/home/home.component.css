@@ -363,7 +363,7 @@
     color: #f1f1f1
 }
 
-/* .insta-gallery{
+.insta-gallery{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -387,7 +387,7 @@
     to {
         transform: scale(2)
     }
-} */
+}
 
 .mid-text{
     /* font-family: 'Permanent Marker', cursive; */
@@ -494,11 +494,16 @@
     text-align: center
 }
 
-/* .post-card{
-    height: 100%;
-    width: 100%;
-    
-} */
+.post-card{
+    transition: box-shadow 0.3s ease-in;
+    margin-bottom: 20px;
+}
+
+.post-card:hover{
+    /* animation: boxAnim 1s ; */
+    box-shadow: 0px 7px 15px 6px rgba(0,0,0,0.26);
+}
+
 
 .post-heading{
     display: flex;
@@ -510,13 +515,9 @@
 .post-body{
     margin-bottom: 2vh;
     padding: 25px 100px 25px 100px;
-    transition: box-shadow 0.3s ease-in;
+    
 }
 
-.post-img:hover + .post-body{
-    /* animation: boxAnim 1s ; */
-    box-shadow: 0px 7px 15px 6px rgba(0,0,0,0.26);
-}
 
 
 /* @keyframes boxAnim{
