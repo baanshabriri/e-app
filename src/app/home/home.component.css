@@ -201,15 +201,41 @@
     height: 50vh;
 }
 
-#featured-section div{
-    display: flex;
+.featured-container{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    ". h ."
+    ". footer .";
+    height: 85vh;
+    margin-bottom: 7.5vh
 }
 
-#featured-section div div{
-    position: relative;
-    right:50%;
-    color: #000000;
-    align-self: flex-end;
+.section-nav{
+    grid-area:h;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.section-sort{
+    grid-area: footer;
+}
+
+.product-list-grid-container-item{
+    text-align: center
+}
+
+.product-list-grid-container-item img{
+    width: 100%;
+    height: 600px;
+}
+
+/* #featured-section div{
+   margin: 10px;
 }
 
 .featured-header{
@@ -217,42 +243,36 @@
 }
 
 .featured-img1{
-    background-image: url("../../assets/architecture-backpack-building-1905975.jpg");
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
     grid-area:footer;
+    display: flex;
+    flex-direction: column;
 }
 .featured-img2{
-    background-image: url("../../assets/coat-cold-female-54206.jpg");
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
     grid-area:footer2;
+    display: flex;
+    flex-direction: column;
 }
 .featured-img3{
-    background-image: url("../../assets/back-background-blur-747470.jpg");
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
     grid-area:footer3;
+    display: flex;
+    flex-direction: column;
 }
 
 #featured-section{ 
     display: grid;
-    /* color: #EDECEC; */
+    color: #EDECEC;
     text-align: center;
-    grid-template-columns: 33.33% 33.33% 33.34%;
-    grid-template-rows: 10% 90%;
+    grid-template-columns:25% 25% 25% 25%;
+    grid-template-rows: 100%;
     grid-template-areas: 
-    "header header header"
-    "footer footer2 footer3";
-    height: 85vh;
-}
+    "header footer footer2 footer3";
+    height: 50vh;
+    margin: 12.50vh 0;
+} */
 
 #featured-section img{
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 .destination-panel{
@@ -260,7 +280,8 @@
     width:inherit;
     height:85vh;
     background-position: center;
-    background-size: auto; 
+    background-size: auto;
+    background-attachment: fixed;
     color: #EDECEC;
     font-size: 2.5em;
     display: flex;
@@ -303,8 +324,8 @@
 }
 
 .store-panel-men{
-    background-image: url("../../assets/apparel-casual-clothes-934070.jpg");
-    background-position: center;
+    background-image: url("../../assets/Untitled-1.png");
+    background-position: unset;
     background-size: auto;
     /* background-attachment: fixed; */
     /* color: #EDECEC; */
@@ -360,7 +381,7 @@
     justify-content: center;
     z-index: -999;
     background-color: black;
-    color: #f1f1f1
+    color: white;
 }
 
 .insta-gallery{

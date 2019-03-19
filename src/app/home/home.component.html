@@ -149,7 +149,7 @@
             </div>
         </nav>
 
-        <section class="featuredSection" id="featured-section">
+        <!-- <section class="featuredSection" id="featured-section">
             <h3 class="featured-header" style="margin:0;padding:0">Featured Products</h3>
             <div class="featured-img1"><img src="" alt="">
                 <div>
@@ -169,8 +169,45 @@
                     <h4>Price</h4>
                 </div>
             </div>
-        </section>
+        </section> -->
 
+        <!-- <section class="featuredSection" id="featured-section">
+            <h3 class="featured-header" style="margin:0;padding:0">Featured Products</h3>
+            <div class="featured-img1">
+                <img src="../../assets/architecture-backpack-building-1905975.jpg" alt="">
+                <h4>Title</h4>
+                <h4>Price</h4>
+            </div>
+            <div class="featured-img2">
+                <img src="../../assets/coat-cold-female-54206.jpg" alt="">
+                <h4>Title</h4>
+                <h4>Price</h4>
+            </div>
+            <div class="featured-img3">
+                <img src="../../assets/back-background-blur-747470.jpg" alt="">
+                <h4>Title</h4>
+                <h4>Price</h4>
+            </div>
+        </section> -->
+
+        <div class="featured-container">
+            <div class="section-nav">
+                <a (click)="slickModal.slickNext()" style="font-size:40px;cursor: pointer;"><i class="fas fa-chevron-circle-left"></i></a>
+                <h2 style="margin:0 10px;">Featured</h2>
+                <a (click)="slickModal.slickPrev()" style="font-size:40px;cursor: pointer;"><i class="fas fa-chevron-circle-right"></i></a>  
+            </div>
+            <div class="section-sort">
+                  <ngx-slick class="carousel carousel-style" #slickModal="slick-modal" [config]="slideConfig" style="">
+                      <div ngxSlickItem *ngFor="let i of featuredLink" class="slide product-list-grid-container-item" style="margin:10px">
+                          <img src={{i.link}} class="">
+                          <h3>Title: {{i.title}}</h3>
+                          <p>Price: {{i.price}}</p>
+                          <p>{{i.info}}</p>
+                      </div>
+                  </ngx-slick>
+            </div>
+        </div>
+            
         <section>
             <div class="store-panel">
                 <div class="row store-panel-row">
@@ -181,9 +218,6 @@
                             <h4 class="" style="font-weight: 500;font-family: 'Volkhov', serif;" id="women">Women</h4>
                         </div>
                     </div>
-                    <!-- <div class="col-6 store-panel-col store-panel-women">
-                        <h1 style="background-color: rgba(0, 0, 0, 0.5);width: 100%;">Women's Collection</h1>
-                    </div> -->
                 </div>
             </div>
         </section>
