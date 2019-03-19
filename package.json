@@ -25,6 +25,7 @@
     "jquery": "^3.3.1",
     "lightslider": "^1.1.6",
     "multicarousel": "^2.0.0",
+    "ngx-slick": "^0.2.1",
     "ngx-slick-carousel": "^0.4.4",
     "rxjs": "~6.3.3",
     "slick-carousel": "^1.8.1",
