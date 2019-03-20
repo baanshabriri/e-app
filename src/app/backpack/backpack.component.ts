@@ -54,7 +54,13 @@ export class BackpackComponent implements OnInit {
   slideConfig = {
     "slidesToShow":3,
     "slidesToScroll": 1,
-    "infinite": true,
+    infinite: true,
+    swipeToSlide: true,
+    centerMode: true,
+    centerPadding:'0px',
+    speed:500,
+    cssEase:'cubic-bezier(.43,.59,.46,.61)',
+    
 };  
 
 
