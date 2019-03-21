@@ -127,7 +127,7 @@
                         <a class="nav-link" href="#">Accessories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link"routerLink='/aboutus' >About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Guide</a>
@@ -231,25 +231,21 @@
 
         <div class="post-latest">
             <div class="post-heading">
+                <a (click)="slickModal2.slickNext()" style="font-size:40px;cursor: pointer;padding:50px 0 0 0;"><i class="fas fa-chevron-circle-left"></i></a>
                 <h2 style="padding:50px 0 0 0;">Xpedition Series</h2>
+                <a (click)="slickModal2.slickPrev()" style="font-size:40px;cursor: pointer;padding:50px 0 0 0;"><i class="fas fa-chevron-circle-right"></i></a>       
             </div>
             <div class="xpedition-container"> 
-                <div class="xpedition-nav">
-                    <a (click)="slickModal2.slickNext()" style="font-size:40px;cursor: pointer;"><i class="fas fa-chevron-circle-left"></i></a>
-                    <a (click)="slickModal2.slickPrev()" style="font-size:40px;cursor: pointer;"><i class="fas fa-chevron-circle-right"></i></a>  
-                </div>
-                <div class="xpedition-section">
-                      <ngx-slick class="carousel carousel-style2" #slickModal2="slick-modal" [config]="slideConfig2" data-slick>
-                          <div ngxSlickItem *ngFor="let x of card" class="slide slider-point slick-slider2" style="margin:10px">
-                            <div class="post-img"><img src={{x.cardLink}} class="card-img-top" alt="..."></div>
+                      <ngx-slick class="carousel carousel-style2" #slickModal2="slick-modal" [config]="slideConfig2" >
+                          <div ngxSlickItem *ngFor="let x of card" class="slide paper slick-slider2">
                             <div class="post-body">
                                 <h5 class="post-title">{{x.cardTitle}}</h5>
                                 <p class="post-info">{{x.cardInfo}}</p>
-                                <p class="post-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <!-- <p class="post-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                             </div>
+                            <div class="post-img"><img src={{x.cardLink}} alt="..."></div>
                           </div>
                       </ngx-slick>
-                </div>
             </div>
 
         </div>
@@ -271,9 +267,10 @@
                 <p style="margin:0;">Load more</p>
             </div>
         </div>  -->
-        <div class="">
-
+        <div class="blank-section">
         </div>
+
+
     </div>
 
     <hr>
@@ -316,3 +313,6 @@
 </div>
 
 <!-- </div> -->
+
+
+

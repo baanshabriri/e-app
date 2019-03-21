@@ -13,7 +13,7 @@ const routes: Routes = [
     path:"backpacks",component: BackpackComponent
   },
   {
-    path:"aboutUs",component: AboutUsComponent
+    path:"aboutus",component: AboutUsComponent
   },
   {
     path:"blog",component: BlogComponent

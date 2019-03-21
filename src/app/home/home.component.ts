@@ -203,7 +203,8 @@ export class HomeComponent implements OnInit {
     "slidesToShow":3,
     "slidesToScroll": 1,
     "infinite": true,
-    cssEase:'linear',
+    cssEase:'ease',
+    variableWidth: true,
     centerMode:true
 }; 
   // public cardF: any = () => {

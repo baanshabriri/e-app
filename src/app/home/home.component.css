@@ -368,22 +368,6 @@
     padding: 0;
 }
 
-.post-panel{
-    /* margin-top: 0px;
-    margin-right:70px; */
-    width: 200px;
-    height: 50vh;
-    border: black solid 1px;
-    position: absolute;
-    right:0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -999;
-    background-color: black;
-    color: white;
-}
-
 .insta-gallery{
     display: inline-flex;
     flex-direction: row;
@@ -426,34 +410,6 @@
 
 .col-style{
     text-align: center;
-}
-
-.post-latest{
-    height: 100vh
-}
-
-
-.card-deck{
-    margin: 0;
-    padding: 0;
-}
-
-.card{
-    border-radius: 0!important;
-    min-width: 325px;
-    max-width: 325px;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.75);
-}
-
-.card img{
-    border-radius: 0!important;
-    height: 250px;
-}
-
-.card-body{
-    border-radius: 0!important;
-    height: 200px;
 }
 
 .footer{
@@ -500,7 +456,7 @@
     padding: 5px;
 }
 
-.post-section{
+/* .post-section{
     display: grid;
     grid-template-columns: 25% 25% 25%;
     grid-template-rows:auto;
@@ -509,44 +465,37 @@
     padding: 0;
     justify-content: center;	
     text-align: center
-}
-/* 
-.post-card{
-    transition: box-shadow 0.3s ease-in;
-    margin-bottom: 20px;
-}
-
-.post-card:hover{
-
-    box-shadow: 0px 7px 15px 6px rgba(0,0,0,0.26);
 } */
 
+/* .post-latest{
+    height: 75vh
+} */
 
 .post-heading{
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 0vh;
-    margin: 0;
+    margin: 0 0 1vh 0;
 }
 
-.post-img{
-    height: 400px;
+/* .post-img{
+    width: 100%;
     overflow: hidden;
-    background-color: #000000;
-}
+} */
 
 .post-img img{
-    height: 100%;
+    width: 100%;
     transition: all 0.6s;
+    padding: 10px;
 }
-
+/* 
 .post-img:hover img{
     transform: scale(1.5);
     opacity: 0.7;
     
-    /* box-shadow: 0px 7px 15px 6px rgba(0,0,0,0.26); */
-}
+    box-shadow: 0px 7px 15px 6px rgba(0,0,0,0.26);
+} */
 
 .button-style{
     display: flex;
@@ -564,30 +513,80 @@
 
 .xpedition-container{
     display: grid;
-    grid-template-columns: 7.5% 90%;
+    grid-template-columns:100%;
     grid-template-rows:100%;
-    height: 100vh;
-}
-
-.xpedition-container.slick-track{
-    height: 100vh;
+    height: 70vh;
+    justify-content:center;
+    align-content: center
 }
 
 .carousel-style2{
-    transform: perspective(5000px) rotateX(60deg); 
-    transition: all 0.3s ease-in;
-
+    padding: 2vw
 }
 
-.carousel-style2  .slick-slider2 {
-    box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.1), 0 0.5em 0 -0.25em #f2f2f2, 0 0.5em 0.1875em -0.25em rgba(0, 0, 0, 0.1), 0 1em 0 -0.5em #e5e5e5, 0 1em 0.1875em -0.5em rgba(0, 0, 0, 0.1) ;
+.slick-slider2 {
+    width: 20vw;
+    height: auto;
+    margin: 2.5vw;
 }
 
-.carousel-style2  .slick-slider2 .slick-current{
-    transform: perspective(-5000px) rotateX(-60deg); 
-}
 
 .post-body{
-    margin-bottom: 2vh;
-    padding: 25px 25px 0 25px;
+    padding: 10px 10px 0 10px;
 }
+
+.paper {
+    background: #fff;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .paper,
+  .paper::before,
+  .paper::after {
+    /* Styles to distinguish sheets from one another */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    border: 1px solid #bbb;
+  }
+  
+  .paper::before,
+  .paper::after {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 99%;
+    background-color: #eee;
+  }
+  
+  .paper::before {
+    right: 15px;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+  }
+  
+  .paper::after {
+    top: 5px;
+    right: -5px;
+    transform: rotate(1deg);
+    z-index: -2;
+  }
+
+  .blank-section{
+    background-image: url("../../assets/back-background-blur-747470.jpg");
+    height:30vh;
+    width: inherit;
+    background-size: cover;
+    background-position: 75%;
+    background-attachment: fixed;
+    opacity: 0.6
+  }
+
+  .insta-section{
+      display: grid;
+      grid-template-columns: repeat(10,2fr);
+      grid-template-rows: 50% 50%;
+      height: 30vh;
+      padding: 0;
+      margin: 0;
+  }

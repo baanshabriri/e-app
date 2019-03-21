@@ -1,3 +1,10 @@
-<p>
-  about-us works!
-</p>
+<div class="card-stack paper">
+      <div *ngFor="let x of card" class="cards" style="margin:10px">
+          <div class="post-img "><img src={{x.cardLink}} class="card-img-top" alt="..."></div>
+          <div class="post-body">
+              <h5 class="post-title">{{x.cardTitle}}</h5>
+              <p class="post-info">{{x.cardInfo}}</p>
+              <p class="post-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+</div>
