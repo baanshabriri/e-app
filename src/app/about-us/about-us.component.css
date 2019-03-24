@@ -1,48 +1,168 @@
-.card-stack{
-    margin: 10vh;
-    width: 50vw;
-    height: 50vh;
+@font-face {
+  font-family: Selima;
+  src: url("../../assets/Selima.otf") format("opentype");
+  font-family:American Captain;
+  src: url("../../assets/AmericanCaptain.otf") format("opentype");
 }
 
-.cards{
-    /* position: absolute; */
-    width: 15vw;
-    height: 15vh;
+
+.main-body{
+  color: #f1f1f1;
+  margin: 0 0 0 0;
+  padding: 0;
 }
 
-.paper {
-    background: #fff;
-    padding: 30px;
-    position: relative;
-  }
+.carousel-item img{
+  height: 100vh;
+  object-fit: cover;
+}
+
+.nav-style {
+  background: rgba(255,255,255,0);
+  height: 25vh;
+  /* font-family: 'Lobster', 'cursive'; */
+  position: absolute;
+  z-index: 999;
+  font-family: Selima;
+}
+
+.store-grid{
+  display: grid;
+  grid-template-columns:  25% 25% 25% ;
+  grid-template-rows: 37.5% 21.5% 21.5% 15%;
+  grid-template-areas:
+  'feat feat feat'
+  'female main male'
+  'female back male'
+  'acces acces acces';
+  width: inherit;
+  height: 200vh;
+  grid-row-gap: 0.75%;
+  justify-content: center;
+  margin-top:2.5vh
+}
+
+.store-featured{
+  grid-area: feat;
+}
+
+.store-featured-img{
   
-  .paper,
-  .paper::before,
-  .paper::after {
-    /* Styles to distinguish sheets from one another */
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
-    border: 1px solid #bbb;
-  }
-  
-  .paper::before,
-  .paper::after {
-    content: "";
-    position: absolute;
-    height: 95%;
-    width: 99%;
-    background-color: #eee;
-  }
-  
-  .paper::before {
-    right: 15px;
-    top: 0;
-    transform: rotate(-1deg);
-    z-index: -1;
-  }
-  
-  .paper::after {
-    top: 5px;
-    right: -5px;
-    transform: rotate(1deg);
-    z-index: -2;
-  }
+}
+
+.slick-slide {
+  position: relative;
+  text-align: center;
+  display: block;
+  height:100%;
+  background-color: black;
+}
+
+.slick-slide img{
+  height: 75vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slick-slide .info{
+  position: absolute;
+  z-index: 99999999;
+  width: 25%;
+  height: 25%;
+  bottom: 0;
+  right: 0;
+  color: #EDECEC;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.name{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.store-female{
+  grid-area: female;
+  background-image: url('../../assets/beauty-close-up-dark-1797350.jpg');
+  background-size: cover;
+}
+
+.store-male{
+  grid-area: male;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/casual-denim-jacket-estonia-1785779.jpg")
+}
+
+
+.carousel-items2 img{
+  height: 68.65vh;
+  width: 100%;
+}
+
+.store-main{
+  grid-area: main;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  flex-direction: column;
+  background-color: #E8E8E8;
+  margin-right:10px; 
+  position: relative;
+}
+
+.store-main:after{
+  content:'';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-right: -25px;
+  width: 0;
+  height: 0;
+  z-index:199;
+  transform: rotate(90deg);
+  border-top: solid 50px #E8E8E8;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+}
+
+.store-backpack{
+  grid-area: back;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  flex-direction: column;
+  background-color: #E8E8E8;
+  margin-left:10px; 
+  position: relative;
+}
+
+
+.store-backpack:after{
+  content:'';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-left: -25px;
+  width: 0;
+  height: 0;
+  z-index:199;
+  transform: rotate(-90deg);
+  border-top: solid 50px #E8E8E8;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+}
+
+.store-acces{
+  grid-area: acces;
+  background-image: url('../../assets/beauty-close-up-dark-1797350.jpg');
+  background-size: cover;
+}

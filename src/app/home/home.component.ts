@@ -61,7 +61,7 @@ export class HomeComponent implements OnInit {
 
   public featuredLink = [
     {
-      link:"../../assets/coat-cold-female-54206.jpg",
+      link:"../../assets/art-boutique-clothes-920735.jpg",
       title:"Title",
       price:"123",
       info:"A brief Info"
@@ -73,7 +73,7 @@ export class HomeComponent implements OnInit {
       info:"A brief Info"
     },
     {
-      link:"../../assets/coat-cold-female-54206.jpg",
+      link:"../../assets/trekking-hiking-group-alpine-53214.jpeg",
       title:"Title",
       price:"2",
       info:"A brief Info"
@@ -84,7 +84,9 @@ export class HomeComponent implements OnInit {
     "slidesToScroll": 1,
     "infinite": true,
     "autoplay": true,
-    "autoplaySpeed": 3000,
+    speed:1500,
+    fade:true,
+    accessibility: true,
 };  
 
   public card = [
