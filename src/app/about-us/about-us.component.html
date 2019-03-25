@@ -29,13 +29,13 @@
                     </div>
                 </div>
             </nav>
-            <div class="carousel-item active" >
+            <div class="carousel-item active">
                 <img src="../../assets/action-adult-adventure-356808.jpg" class="d-block w-100">
             </div>
             <div class="carousel-item">
                 <img src="../../assets/adventure-attraction-blurry-618545.jpg" class="d-block w-100">
             </div>
-            <div class="carousel-item "  >
+            <div class="carousel-item ">
                 <img src="../../assets/activity-adventure-backlit-450062.jpg" class="d-block w-100">
             </div>
         </div>
@@ -54,51 +54,51 @@
 <div class="store-grid">
     <div class="store-featured row no-gutters">
         <div class="store-featured-img col-10">
-                <ngx-slick class="carousel carousel-style" #slickModal="slick-modal" [config]="slideConfig" style="">
-                    <div ngxSlickItem *ngFor="let i of featuredLink" class="slide">
-                        
-                        <img src={{i.link}} class="">
-                        <div class="info">
-                          <h3>Title: {{i.title}}</h3>
-                          <p>Price: {{i.price}}</p>
-                          <p>{{i.info}}</p>
-                        </div>
+            <ngx-slick class="carousel carousel-style" #slickModal="slick-modal" [config]="slideConfig" style="">
+                <div ngxSlickItem *ngFor="let i of featuredLink" class="slide">
+
+                    <img src={{i.link}} class="">
+                    <div class="info">
+                        <h3 style="font-family:American Captain;">Title: {{i.title}}</h3>
+                        <p style="font-family:American Captain;;font-weight:lighter;font-size: 20px">Price: {{i.price}}</p>
+                        <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: aliceblue;color: black;border: none">SHOP</button>
                     </div>
-                </ngx-slick>
+                </div>
+            </ngx-slick>
         </div>
         <div class="name col-2">
-                        <a (click)="slickModal.slickPrev()"  style="font-size:40px;cursor: pointer;"><i class="fa fa-chevron-left"></i></a>
-                        <h2 style="margin:0 10px;">Featured</h2>
-                        <a (click)="slickModal.slickNext()" class="a2" style="font-size:40px;cursor: pointer;"><i class="fa fa-chevron-right"></i></a>
+            <button (click)="slickModal.slickPrev()" style="font-size:40px;cursor: pointer;"><i class="fa fa-chevron-left"></i></button>
+            <h2 style="margin:0 10px;">Featured</h2>
+            <button (click)="slickModal.slickNext()" class="a2" style="font-size:40px;cursor: pointer;"><i class="fa fa-chevron-right"></i></button>
         </div>
     </div>
     <div class="store-female">
-        hello
+
     </div>
     <div class="store-backpack">
-        <h6><span style="font-size: 2.5rem;font-weight: 400;font-family:American Captain,sans-serif;">MEN COLLECTION</span></h6> 
+        <h6><span style="font-size: 2.5rem;font-weight: 400;font-family:American Captain,sans-serif;">MEN COLLECTION</span></h6>
         <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: black;color: aliceblue;border: none">SHOP</button>
     </div>
     <div class="store-main">
-            <h6><span style="font-size: 2.5rem;font-weight: 400;font-family:American Captain,sans-serif;">WOMEN COLLECTION</span></h6> 
-            <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: black;color: aliceblue;border: none">SHOP</button>
+        <h6><span style="font-size: 2.5rem;font-weight: 400;font-family:American Captain,sans-serif;">WOMEN COLLECTION</span></h6>
+        <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: black;color: aliceblue;border: none">SHOP</button>
     </div>
     <div class="store-male">
-            <!-- <div class="carousel slide" data-ride="carousel" style="position: relative">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active carousel-items2" >
-                        <img class="d-block" src="../../assets/casual-denim-jacket-estonia-1785779.jpg" alt="First slide"  >
-                      </div>
-                      <div class="carousel-item carousel-items2">
-                        <img class="d-block" src="../../assets/architecture-backpack-building-1905975.jpg" alt="Second slide">
-                      </div>
-                      <div class="carousel-item carousel-items2" >
-                        <img class="d-block" src="../../assets/casual-denim-jacket-estonia-1785779.jpg" alt="Third slide">
-                      </div>
-                    </div>
-            </div> -->
     </div>
     <div class="store-acces">
-        hello
+
     </div>
 </div>
+<section class="destination-panel">
+    <h2 style="font-family: Selima;font-size: 50px">Your Next Destination ?</h2>
+    <input type="text" style="padding:5px;margin: 5px">
+    <input type="text" style="padding:5px;margin: 5px">
+</section>
+
+<section>
+    <div class="sign one" *ngFor="let x of card">
+        <img src={{x.cardLink}} alt="..." style="width:100px;height: 100px">
+        <h5 class="post-title">{{x.cardTitle}}</h5>
+        <p class="post-info">{{x.cardInfo}}</p>
+    </div>
+</section>

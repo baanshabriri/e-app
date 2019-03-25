@@ -39,8 +39,120 @@ export class AboutUsComponent implements OnInit {
     speed:700,
     fade:true,
     accessibility: true,
-    adaptiveHeight: false
+    adaptiveHeight: false,
 }; 
 
+public card = [
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+  }
+]
 
 }
