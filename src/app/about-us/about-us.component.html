@@ -95,10 +95,33 @@
     <input type="text" style="padding:5px;margin: 5px">
 </section>
 
-<section>
-    <div class="sign one" *ngFor="let x of card">
-        <img src={{x.cardLink}} alt="..." style="width:100px;height: 100px">
-        <h5 class="post-title">{{x.cardTitle}}</h5>
-        <p class="post-info">{{x.cardInfo}}</p>
-    </div>
-</section>
+<div style="display: flex;flex-direction: row;justify-content: space-between">
+
+        <a (click)="slickModal2.slickPrev()"  style="font-size:50px;cursor: pointer;"><i class="fa fa-chevron-left"></i></a>
+
+        <h2 style="text-align:center">Xpedition</h2>
+        <a (click)="slickModal2.slickNext()" class="a2" style="font-size:50px;cursor: pointer;"><i class="fa fa-chevron-right"></i></a>
+        
+</div>
+<ngx-slick class="xpedition-panel" #slickModal2="slick-modal" [config]="slideConfig2">
+      <div ngxSlickItem  class="example-2 card" *ngFor="let i of card" style="">
+        <div class="wrapper" [ngStyle]="{'background-image':'url('+i.cardLink+')'}">
+          <div class="header">
+            <div class="date">
+              <span class="day">12</span>
+              <span class="month">Aug</span>
+              <span class="year">2016</span>
+            </div>
+          </div>
+          <div class="data">
+            <div class="content">
+              <span class="author">Author</span>
+              <h1 class="title"><a href="#">{{i.cardTitle}}</a></h1>
+              <p class="text">{{i.cardInfo}}</p>
+              <a href="#" class="button">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</ngx-slick>

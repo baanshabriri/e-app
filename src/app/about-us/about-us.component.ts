@@ -46,113 +46,54 @@ public card = [
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    cardLink: "../../assets/action-adult-adventure-356808.jpg"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    cardLink: "../../assets/action-adult-adventure-356808.jpg"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    cardLink: "../../assets/action-adult-adventure-356808.jpg"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    cardLink: "../../assets/action-adult-adventure-356808.jpg"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    cardLink: "../../assets/action-adult-adventure-356808.jpg"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    cardLink: "../../assets/action-adult-adventure-356808.jpg"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    cardLink: "../../assets/action-adult-adventure-356808.jpg"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    cardLink: "../../assets/action-adult-adventure-356808.jpg"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
+    cardLink: "../../assets/action-adult-adventure-356808.jpg"
   },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/trekking-hiking-group-alpine-53214.jpeg"
-  }
 ]
+slideConfig2 = {
+  "slidesToShow":4,
+  "slidesToScroll": 4,
+  "infinite": true,
+  
+};
 
 }
