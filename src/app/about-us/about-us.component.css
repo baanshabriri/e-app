@@ -301,8 +301,8 @@
 
 .store-acces{
   grid-area: acces;
-  background-image: url('../../assets/samuel-zeller-358865-unsplash.jpg');
-  background-size: cover;
+  /* background-image: url('../../assets/samuel-zeller-358865-unsplash.jpg');
+  background-size: cover; */
 }
 /* 
 .des{
