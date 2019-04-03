@@ -1,3 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-light nav-style" scroll [@scrollAnimation]="state">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </nav>
+
+<div style="position:fixed;z-index: -999;left:500px">
+    <img src="../../assets/oRGmV1554323362.jpg" alt="">
+</div>
+
 <section class="landing-section">
     <div class="main-pics">
         <span style="position: absolute;left:10%;top:10%;color: white">Trekmonk</span>
@@ -28,7 +36,7 @@
 
 
 
-<div class="store-grid">
+<div class="store-grid" >
     <div class="store-female">
 
     </div>
@@ -45,14 +53,13 @@
 </div>
 
 <section class="destination-panel">
-    <h2 style="font-family: Selima;font-size: 50px">Your Next Destination ?</h2>
+    <h2 style="font-family: Payday;font-size: 50px">Your Next Destination ?</h2>
     <input type="text" style="padding:5px;margin: 5px">
     <input type="text" style="padding:5px;margin: 5px">
 </section>
 
 <section style="position: relative">
-    <h1 style="position: absolute;left: 0;writing-mode: vertical-rl;
-                    text-orientation: upright;">XPEDITIONS</h1>
+    <h1 style="position: absolute;left: 0">XPEDITIONS</h1>
     <div class="xpedition2">
         <div class="example-2 card" *ngFor="let i of card" style="">
             <div class="wrapper" [ngStyle]="{'background-image':'url('+i.cardLink+')'}">

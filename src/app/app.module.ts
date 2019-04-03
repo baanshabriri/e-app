@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
 import { BackpackComponent } from './backpack/backpack.component';
-
+import {scrollM} from '../app/home/m.directive'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +17,7 @@ import { BackpackComponent } from './backpack/backpack.component';
     AboutUsComponent,
     BlogComponent,
     BackpackComponent,
+    scrollM
   ],
   imports: [
     HttpClientModule,

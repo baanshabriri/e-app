@@ -1,15 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener,Directive} from '@angular/core';
 import * as $ from 'jquery';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
+    trigger('scrollAnimation', [
+      state('show', style({
+        opacity: 1,
+      })),
+      state('hide',   style({
+        opacity: 0,
+      })),
+      transition('show => hide', animate('400ms ease-out')),
+      transition('hide => show', animate('400ms ease-in'))
+    ])
   ]
 })
-export class HomeComponent implements OnInit {
 
+
+
+export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}

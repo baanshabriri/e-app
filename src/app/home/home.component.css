@@ -3,6 +3,8 @@
     src: url("../../assets/Selima.otf") format("opentype");
     font-family:American Captain;
     src: url("../../assets/AmericanCaptain.otf") format("opentype");
+    font-family:Payday;
+    src: url("../../assets/Payday.ttf");
   }
   * {
     box-sizing: border-box;
@@ -10,25 +12,14 @@
   }
   
   
-  /* .main-body{
-    color: #f1f1f1;
-    margin: 0 0 0 0;
-    padding: 0;
-  } */
-  /* 
-  .carousel-item img{
-    height: 100vh;
-    object-fit: cover;
+  .nav-style{
+    display:none;
+    position: fixed;
+    z-index: 999999999;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 1);
   }
-  
-  .nav-style {
-    background: rgba(255,255,255,0);
-    height: 25vh;
-    font-family: 'Lobster', 'cursive';
-    position: absolute;
-    z-index: 999;
-    font-family: Selima; */
-  /* } */
   
   .landing-section{
     height: 100vh;
@@ -88,14 +79,14 @@
   }
   
   .featured-section-hover{
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
-    object-fit: contain;
+    object-fit: contain; */
     position: relative;
   }
   
   .featured-section-hover img{
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
     object-fit: cover;
     transition: 0.3s ease-in-out;
@@ -103,8 +94,10 @@
   
   .bottom-img{
     position: absolute;
+    width: 100%;
     left: 0;
     z-index: -1;
+    object-fit: cover;
   }
   
   .top-img:hover {
