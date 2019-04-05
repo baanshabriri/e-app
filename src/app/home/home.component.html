@@ -1,282 +1,101 @@
-<div id="mySidenav" class="sidenav">
-    <div class="container">
-        <a id="sidebarBack" style="margin-bottom:1em"><i class="fas fa-arrow-left"></i></a>
-        <hr>
-        <a href="#">Accessories</a>
-        <hr>
-        <a href="#">Men's</a>
-        <hr>
-        <a href="#">Women's</a>
-        <hr>
-        <a href="#">Store</a>
-        <hr>
-        <a href="#">About Us</a>
-        <hr>
-        <a href="#">My Account</a>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light nav-style" scroll [@scrollAnimation]="state">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </nav>
+
+<div style="position:fixed;z-index: -999;left:500px">
+    <img src="../../assets/oRGmV1554323362.jpg" alt="">
 </div>
-<div id="sidenavRight" class="sidenav ">
-    <div class="container">
-        <a id="sidebarBack" style="font-size: 2.5em;margin-bottom:1em "><i class="fas fa-arrow-left"></i></a>
-        <hr>
-        <a href="#">Checkout</a>
+
+<section class="landing-section">
+    <div class="main-pics">
+        <span style="position: absolute;left:10%;top:10%;color: white">Trekmonk</span>
+    </div>
+    <div class="small-1">
+        <!-- <button style="position: absolute;right:450px;bottom:100px;font-size:2rem;font-family:American Captain,sans-serif;background-color: black;color: aliceblue;border: none">SHOP</button> -->
+
+    </div>
+    <div class="small-2">
+        <span style="position: absolute;left:10%;top:10%;">Weather</span>
+    </div>
+</section>
+
+<section class="featured-section">
+    <div *ngFor="let i of featuredLink; let x = index" class="featured-section-hover" style="position: relative;"
+        (mouseover)="hover=x" (mouseleave)="hover=-1">
+        <!-- [ngStyle]="hover==x ?{'background-image':'url('+i.link2+')'}:{'background-image':'url('+i.link+')'}"  -->
+        <!-- <img [src]="hover==x ? i.link2:i.link" class=""> -->
+        <img [src]="i.link" class="top-img">
+        <img [src]="i.link2" class="bottom-img">
+        <div class="info">
+            <h3 style="font-family:American Captain;">Title: {{i.title}}</h3>
+            <p style="font-family:American Captain;;font-weight:lighter;font-size: 20px">Price: {{i.price}}</p>
+            <!-- <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: aliceblue;color: black;border: none">SHOP</button> -->
+        </div>
+    </div>
+</section>
+
+
+
+<div class="store-grid" >
+    <div class="store-female">
+
+    </div>
+    <div class="store-backpack">
+        <h6><span style="font-size: 2.5rem;font-weight: 400;font-family:American Captain,sans-serif;">MEN COLLECTION</span></h6>
+        <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: black;color: aliceblue;border: none">SHOP</button>
+    </div>
+    <div class="store-main">
+        <h6><span style="font-size: 2.5rem;font-weight: 400;font-family:American Captain,sans-serif;">WOMEN COLLECTION</span></h6>
+        <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: black;color: aliceblue;border: none">SHOP</button>
+    </div>
+    <div class="store-male">
     </div>
 </div>
 
-<div class="main">
-    <div class="main-body">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <nav class="navbar navbar-expand-lg navbar-light bg nav-style">
-                    <div class="row" style="width: 100vw">
-                        <div class="col" id="sidebarToggle">
-                            <span class="blur" style="font-size: 2em;padding: 2em">
-                                <i class="fa fa-bars"></i>
-                            </span>
-                        </div>
-                        <div class="col">
-                            <div style="text-align:center;">
-                                <span>
-                                    <h1 class="display-1">Trekmonk</h1>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col" id="sidebarToggleRight">
-                            <div class="float-right">
-                                <span class="blur" style="font-size: 2em;padding: 2em">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </span>
-                            </div>
-                        </div>
+<section class="destination-panel">
+    <h2 style="font-family: Payday;font-size: 50px">Your Next Destination ?</h2>
+    <input type="text" style="padding:5px;margin: 5px">
+    <input type="text" style="padding:5px;margin: 5px">
+</section>
+
+<section style="position: relative">
+    <h1 style="position: absolute;left: 0">XPEDITIONS</h1>
+    <div class="xpedition2">
+        <div class="example-2 card" *ngFor="let i of card" style="">
+            <div class="wrapper" [ngStyle]="{'background-image':'url('+i.cardLink+')'}">
+                <div class="header">
+                    <div class="date">
+                        <span class="day">12</span>
+                        <span class="month">Aug</span>
+                        <span class="year">2016</span>
                     </div>
-                </nav>
-                <div class="carousel-item active">
-                    <img src="../../assets/action-adult-adventure-356808.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="../../assets/adventure-attraction-blurry-618545.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/activity-adventure-backlit-450062.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-
-    </div>
-    <div class="back-img">
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg nav-style2">
-            <!-- <a class="navbar-brand" href="#" style="font-size:2em">Trekmonk</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav" style="font-size:1.75em">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item" id="dropdown">
-                        <a class="nav-link">Men</a>
-                        <ul class="list-unstyled" id="menu">
-                            <li>Tshirts</li>
-
-                            <li>Fleece Insulation</li>
-
-                            <li>Down Insulation</li>
-
-                            <li>Raingear</li>
-
-                            <li>Pants</li>
-
-                            <li>Softshell</li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" id="dropdown2">
-                        <a class="nav-link">Women</a>
-                        <ul class="list-unstyled" id="menu2">
-                            <li>Tshirts</li>
-
-                            <li>Fleece Insulation</li>
-
-                            <li>Down Insulation</li>
-
-                            <li>Raingear</li>
-
-                            <li>Pants</li>
-
-                            <li>Softshell</li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/backpacks' >Backpacks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Accessories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"routerLink='/aboutus' >About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Guide</a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav ml-auto" style="font-size:1.75em">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Account</a>
-                    </li>
-                    <li class="nav-item" style="margin: 8px">
-                        <i class="fas fa-search"></i>
-                    </li>
-                    <li class="nav-item" style="margin: 8px">
-                        <i class="fas fa-shopping-cart"></i>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-
-        <div class="featured-container">
-            <div class="section-nav">
-                <a (click)="slickModal.slickPrev()"  style="font-size:20px;cursor: pointer;">  <i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i></a>
-                <h2 style="margin:0 10px; ">Featured</h2>
-                <a (click)="slickModal.slickNext()" class="a2" style="font-size:20px;cursor: pointer;"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></a>
-            </div>
-            <div class="section-sort">
-                  <ngx-slick class="carousel carousel-style" #slickModal="slick-modal" [config]="slideConfig" style="">
-                      <div ngxSlickItem *ngFor="let i of featuredLink" class="slide">
-                          <img src={{i.link}} class="">
-                          <div class="info">
-                            <h3>Title: {{i.title}}</h3>
-                            <p>Price: {{i.price}}</p>
-                            <p>{{i.info}}</p>
-                          </div>
-                      </div>
-                  </ngx-slick>
-            </div>
-        </div>
-            
-        <section>
-            <div class="store-panel">
-                <div class="store-panel-row">
-                    <div class="store-panel-col store-panel-men">
-                        <div class="">
-                            <h1 class="display-4" style="font-weight: 500;font-family: 'Volkhov', serif;" id="shop">SHOP</h1>
-                            <h4 class="" style="font-weight: 500;font-family: 'Volkhov', serif;" id="men">Men</h4>
-                            <h4 class="" style="font-weight: 500;font-family: 'Volkhov', serif;" id="women">Women</h4>
-                        </div>
+                <div class="data">
+                    <div class="content">
+                        <span class="author">Author</span>
+                        <h1 class="title"><a href="#">{{i.cardTitle}}</a></h1>
+                        <p class="text">{{i.cardInfo}}</p>
+                        <a href="#" class="button">Read more</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <div>
-            <section class="destination-panel">
-                <h2 style="font-family: Selima;font-size: 50px">Your Next Destination ?</h2>
-                <input type="text" style="padding:5px;margin: 5px">
-                <input type="text" style="padding:5px;margin: 5px">
-            </section>
-    
-    
-            <div class="post-latest">
-                <div class="post-heading">
-                    <a (click)="slickModal2.slickNext()" style="font-size:40px;cursor: pointer;padding:50px 0 0 0;"><i class="fas fa-chevron-circle-left"></i></a>
-                    <h2 style="padding:50px 0 0 0;">Xpedition Series</h2>
-                    <a (click)="slickModal2.slickPrev()" style="font-size:40px;cursor: pointer;padding:50px 0 0 0;"><i class="fas fa-chevron-circle-right"></i></a>       
-                </div>
-                <div class="xpedition-container"> 
-                          <ngx-slick class="carousel carousel-style2" #slickModal2="slick-modal" [config]="slideConfig2" >
-                              <div ngxSlickItem *ngFor="let x of card" class="slide paper slick-slider2">
-                                <div class="post-body">
-                                    <h5 class="post-title">{{x.cardTitle}}</h5>
-                                    <p class="post-info">{{x.cardInfo}}</p>
-                                    <!-- <p class="post-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                                </div>
-                                <div class="post-img"><img src={{x.cardLink}} alt="..."></div>
-                              </div>
-                          </ngx-slick>
-                </div>
-    
-            </div>
-    
-             <!-- <div class="insta-gallery container-fluid d-flex flex-row">
-                <div style="width: 280px;height: 210px;text-align: center;align-items: center;display: flex;align-items: center;flex-direction: column;border: 1px solid black;border-radius: 4px">
-                    <p style="margin:20px 0 0 0;padding: 0">Find us</p>
-                    <i class="fab fa-instagram" style="font-size: 100px;">
-                    </i>
-                    <p style="margin:0;">@Trekmonk</p>
-                </div>
-                <img src="../../assets/adventure-attraction-blurry-618545.jpg" alt="">
-                <img src="../../assets/action-adult-adventure-356808.jpg" alt="">
-                <img src="../../assets/adult-adventure-climb-414017.jpg" alt="">
-                <img src="../../assets/adventure-attraction-blurry-618545.jpg" alt="">
-                <img src="../../assets/action-adult-adventure-356808.jpg" alt="">
-    
-                <div style="width: 280px;height: 210px;text-align: center;display: flex;align-items: center;justify-content: center">
-                    <p style="margin:0;">Load more</p>
-                </div>
-            </div>  -->
-            <div class="blank-section">
-            </div>
-    
-    
         </div>
-    
-        <hr>
-    
-        <!-- <div class="footer">
-            <div class="footer-sec-one">
-                <ul class="list-unstyled">
-                    <li>Blog</li>
-                    <li>Shipping</li>
-                    <li>Contacts & FAQs</li>
-                </ul>
-            </div>
-            <div class="footer-sec-two">
-                <div>
-                    Subscribe
-                </div>
-                <div style="margin-top:10px">
-                    <input type="email" name="email" id="" placeholder="Email">
-                </div>
-                <div style="margin-top:10px">
-                    <h4>Follow Us</h4>
-                </div>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-facebook-square"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
-                </ul>
-            </div>
-            <div class="footer-sec-three">
-                <ul class="list-unstyled">
-                    <li>Email</li>
-                    <li>email@email.com</li>
-                    <hr>
-                    <li>Call</li>
-                    <li>123456789</li>
-                    <li>123456789</li>
-                </ul>
-            </div>
+    </div>
+    <!-- <h1 style="position: absolute;right: 0;writing-mode: vertical-rl;
+                    text-orientation: upright;">View</h1> -->
+</section>
+
+
+<section style="position:relative">
+    <!-- <div class="insta-info">
+            <i class="fab fa-instagram" style="font-size:100px"></i>
+            <h1>Follow Us</h1>
         </div> -->
+    <div class="insta-gram">
+        <div *ngFor="let i of card2" [ngStyle]="{'background-image':'url('+i.cardLink+')'}">
+        </div>
     </div>
-</div>
-
-<!-- </div> -->
-
-
-
-
-
+</section>
+<section class="footer">
+    FOOTER
+</section>

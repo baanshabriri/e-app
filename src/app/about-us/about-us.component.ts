@@ -1,16 +1,27 @@
-import { Component, OnInit, ViewChild, ChangeDetectorRef } from '@angular/core';
-import { NguCarousel, NguCarouselConfig } from '@ngu/carousel';
+import { Component, OnInit, ViewChild, ChangeDetectorRef, ElementRef } from '@angular/core';
+import * as $ from 'jquery';
+
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.css',]
 })
 export class AboutUsComponent implements OnInit {
-
-  constructor(private _cdr: ChangeDetectorRef) { }
+  public num:any;
+  public even:any;
+  public odd:any;
+  public slide:any;
+  
+  constructor() { }
 
   ngOnInit() {
   }
+
+  ngAfterViewInit() {
+    // $('#slider').cardslider();
+  }
+  
+
   public featuredLink = [
     {
       link:"../../assets/products/9-1024x1024.jpg",
@@ -67,63 +78,33 @@ public card = [
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
+    cardLink: "https://source.unsplash.com/626x626/?horizon"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
+    cardLink: "https://source.unsplash.com/626x626/?spectrum"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
+    cardLink: "https://source.unsplash.com/626x626/?grass"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
+    cardLink: "https://source.unsplash.com/626x626/?holiday"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
+    cardLink: "https://source.unsplash.com/626x626/?mountain"
   },
   {
     cardTitle: "hello",
     cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
-  },
-  {
-    cardTitle: "hello",
-    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    cardLink: "../../assets/action-adult-adventure-356808.jpg"
-  },
+    cardLink: "https://source.unsplash.com/626x626/?people"
+  }
 ];
 slideConfig2 = {
   "slidesToShow":3,
@@ -134,8 +115,91 @@ slideConfig2 = {
   // fade:true,
   accessibility: true,
   adaptiveHeight: false,
-  centerMode: true,
+  // centerMode: true,
 
 }; 
+
+public card2 = [
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "../assets/20170914-instagram-logo-d.gif"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?fitness"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?grass"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?holiday"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?nature"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?people"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?animals"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?travel"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?arts"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?beauty"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?winter"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?summer"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?autumn"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?firework"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?lone"
+  },
+  {
+    cardTitle: "hello",
+    cardInfo: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    cardLink: "https://source.unsplash.com/626x626/?wild"
+  },
+];
 }
 
