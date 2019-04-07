@@ -16,6 +16,7 @@ export class StoreComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    window.scroll(0, 0);
     this.route.paramMap.subscribe(params => {
         this.category = params.get('id')
         console.log("hello",this.category);
@@ -37,6 +38,7 @@ export class StoreComponent implements OnInit {
       this.typeBool = true;
     }
     else {
+      this.type = this.women
       this.typeBool = false
     }
   }

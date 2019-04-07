@@ -15,10 +15,13 @@
     [routerLink]="typeBool ? ['/store/men/shirts']:['/store/women/shirts']">
         <h3 style="text-align:center;background-color: white;color: black;">T-Shirts</h3>
     </div>
-    <div class="fleece" [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }"
-    [routerLink]="typeBool ? ['/store/men/Fleece Insulations']:['/store/women/Fleece Insulations']"
-    >
-        <h3 style="text-align:center;background-color: white;color: black">Fleece Insulations</h3>
+    <div class="fleece" [routerLink]="typeBool ? ['/store/men/Fleece Insulations']:['/store/women/Fleece Insulations']">   
+        <div [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }">
+        </div>
+        <div class="sub-grid-right">
+            <h3 style="text-align:center;background-color: white;color: black">Fleece Insulations</h3>
+            <p style="font-size:20px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ipsum repellendus voluptates nostrum quasi fugiat minus rerum expedita excepturi, quibusdam voluptatem modi enim sit esse explicabo quia nisi odio ad!</p>
+        </div>
     </div>
     <div class="pants" 
     [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }"
@@ -27,17 +30,26 @@
         <h3 style="text-align:center;background-color: white;color: black">Pants</h3>
     </div>
     <div 
-    class="softshell" [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }"
+    class="softshell" 
     [routerLink]="typeBool ? ['/store/men/Softshell']:['/store/women/Softshell']"
     >
+    <div class="sub-grid-left">
         <h3 style="text-align:center;background-color: white;color: black">Softshells</h3>
+        <p style="font-size:20px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ipsum repellendus voluptates nostrum quasi fugiat minus rerum expedita excepturi, quibusdam voluptatem modi enim sit esse explicabo quia nisi odio ad!</p>
+    </div>
+    <div [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }">
+    </div>
     </div>
     <div class="down" 
-    [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }"
     [routerLink]="typeBool ? ['/store/men/Down Insulations']:['/store/women/Down Insulations']"
     >
-        <h3 style="text-align:center;background-color: white;color: black">Down Insulations</h3>
+    <div [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }">
     </div>
+    <div class="sub-grid-right">
+        <h3 style="text-align:center;background-color: white;color: black">Down Insulations</h3>
+        <p style="font-size:20px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ipsum repellendus voluptates nostrum quasi fugiat minus rerum expedita excepturi, quibusdam voluptatem modi enim sit esse explicabo quia nisi odio ad!</p>
+    </div>    
+</div>
 </section>
 
 <section style="height:75vh;font-size: 50px;background-color: black;margin-top: 20px;color: white">
