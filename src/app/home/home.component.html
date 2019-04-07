@@ -1,10 +1,12 @@
 <nav class="navbar navbar-expand-lg navbar-light nav-style" scroll [@scrollAnimation]="state">
-    <a class="navbar-brand" href="#">Navbar</a>
+        <h3 class="navbar-brand" routerLink="/">Navbar</h3>
+    <p class="navbar-brand" routerLink="/store/men">Men</p>
+    <p class="navbar-brand" routerLink="/store/women">Women</p>
   </nav>
 
-<div style="position:fixed;z-index: -999;left:500px">
+<!-- <div style="position:fixed;z-index: -999;left:500px">
     <img src="../../assets/oRGmV1554323362.jpg" alt="">
-</div>
+</div> -->
 
 <section class="landing-section">
     <div class="main-pics">
@@ -42,11 +44,11 @@
     </div>
     <div class="store-backpack">
         <h6><span style="font-size: 2.5rem;font-weight: 400;font-family:American Captain,sans-serif;">MEN COLLECTION</span></h6>
-        <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: black;color: aliceblue;border: none">SHOP</button>
+        <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: black;color: aliceblue;border: none" routerLink="/store/men">SHOP</button>
     </div>
     <div class="store-main">
         <h6><span style="font-size: 2.5rem;font-weight: 400;font-family:American Captain,sans-serif;">WOMEN COLLECTION</span></h6>
-        <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: black;color: aliceblue;border: none">SHOP</button>
+        <button style="font-size:2rem;font-family:American Captain,sans-serif;background-color: black;color: aliceblue;border: none" routerLink="/store/women" >SHOP</button>
     </div>
     <div class="store-male">
     </div>

@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light nav-style">
+    <h3 class="navbar-brand" routerLink="/">Navbar</h3>
+    <p class="navbar-brand" routerLink="/store/men" (click)="gotoCat('men')">Men</p>
+    <p class="navbar-brand" routerLink="/store/women" (click)="gotoCat('women')">Women</p>
+</nav>
+
+<h1 style="text-align:center">SHOP</h1>
+
+<section class="product-type">
+    <div class="new" [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }" 
+    [routerLink]="typeBool ? ['/store/men/New Arrivals']:['/store/women/New Arrivals']">
+        <h3 style="text-align:center;background-color: white;color: black">New Arrivals</h3>
+    </div>
+    <div class="shirts" [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }"
+    [routerLink]="typeBool ? ['/store/men/shirts']:['/store/women/shirts']">
+        <h3 style="text-align:center;background-color: white;color: black;">T-Shirts</h3>
+    </div>
+    <div class="fleece" [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }"
+    [routerLink]="typeBool ? ['/store/men/Fleece Insulations']:['/store/women/Fleece Insulations']"
+    >
+        <h3 style="text-align:center;background-color: white;color: black">Fleece Insulations</h3>
+    </div>
+    <div class="pants" 
+    [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }"
+    [routerLink]="typeBool ? ['/store/men/Pants']:['/store/women/Pants']"
+    >
+        <h3 style="text-align:center;background-color: white;color: black">Pants</h3>
+    </div>
+    <div 
+    class="softshell" [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }"
+    [routerLink]="typeBool ? ['/store/men/Softshell']:['/store/women/Softshell']"
+    >
+        <h3 style="text-align:center;background-color: white;color: black">Softshells</h3>
+    </div>
+    <div class="down" 
+    [ngStyle]="{'background-image': typeBool ? 'url(https://source.unsplash.com/626x626/?men)':'url(https://source.unsplash.com/626x626/?women)' }"
+    [routerLink]="typeBool ? ['/store/men/Down Insulations']:['/store/women/Down Insulations']"
+    >
+        <h3 style="text-align:center;background-color: white;color: black">Down Insulations</h3>
+    </div>
+</section>
+
+<section style="height:75vh;font-size: 50px;background-color: black;margin-top: 20px;color: white">
+    What people say about our products
+</section>
+<section style="height:75vh;font-size: 50px;background-color: darkslateblue">
+        Footer Optional
+</section>

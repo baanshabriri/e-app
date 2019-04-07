@@ -1,0 +1,60 @@
+.sidemenu{
+    position: fixed;
+    width: 15vw;
+    height: 100vh;
+    left: 0;
+}
+
+
+.product-type {
+    display: grid;
+    grid-template-columns: 10% 30% 30% 10%;
+    grid-auto-rows: 60vh;
+    grid-template-areas:
+    '. new new .'
+    '. shirts fleece .'
+    '. pants softshell .'
+    '. down down .';
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    margin-top: 10vh;
+    font: 0.1em smaller;
+
+}
+
+.new{
+    grid-area: new;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fleece{
+    grid-area: fleece;
+    background-image: url("https://source.unsplash.com/626x626/?fleece");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shirts{
+    grid-area: shirts;
+    background-image: url("https://source.unsplash.com/626x626/?tshirts");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pants{
+    grid-area: pants;
+    background-image: url("https://source.unsplash.com/626x626/?pants");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.softshell{
+    grid-area: softshell;
+    background-image: url("https://source.unsplash.com/626x626/?softshell");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.down{
+    grid-area: down;
+    background-image: url("https://source.unsplash.com/626x626/?down");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
