@@ -12,7 +12,7 @@
   [infiniteScrollDistance]="2"
   [infiniteScrollThrottle]="500"
   (scrolled)="onScroll()"
-  [scrollWindow]="true"> 
+  > 
       <div *ngFor="let p of products" >
           <img src={{p.img}} alt="">
           <h3>{{p.Title}}</h3>

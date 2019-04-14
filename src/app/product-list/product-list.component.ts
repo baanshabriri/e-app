@@ -14,7 +14,7 @@ export class ProductListComponent implements OnInit {
   constructor(private route:ActivatedRoute) { }
 
   ngOnInit() {
-    
+    window.scroll(0, 0);
     this.route.paramMap.subscribe(params => {
       this.title = params.get('cat')
       console.log("hello",this.title);

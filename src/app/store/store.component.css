@@ -8,12 +8,13 @@
 
 .product-type {
     display: grid;
-    grid-template-columns: 10% 30% 30% 10%;
-    grid-auto-rows: 60vh;
+    grid-template-columns: 5% 35% 35% 5%;
+    grid-auto-rows: 50vh;
     grid-template-areas:
     '. new new .'
-    '. shirts fleece .'
-    '. pants softshell .'
+    '. shirts pants .'
+    '. fleece fleece  .'
+    '. softshell softshell .'
     '. down down .';
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -30,31 +31,67 @@
 }
 .fleece{
     grid-area: fleece;
-    background-image: url("https://source.unsplash.com/626x626/?fleece");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
 }
 .shirts{
     grid-area: shirts;
-    background-image: url("https://source.unsplash.com/626x626/?tshirts");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .pants{
     grid-area: pants;
-    background-image: url("https://source.unsplash.com/626x626/?pants");
-    background-repeat: no-repeat;
+   background-repeat: no-repeat;
     background-size: cover;
 }
 .softshell{
     grid-area: softshell;
-    background-image: url("https://source.unsplash.com/626x626/?softshell");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
 }
 .down{
     grid-area: down;
-    background-image: url("https://source.unsplash.com/626x626/?down");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.sub-grid-right{
+    border: 1px solid #DEDEDE;
+    border-left: 1px solid white;
+}
+
+.sub-grid-right:after{
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 24px;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: 25px solid white;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(90deg);
+}
+
+.sub-grid-left{
+    border: 1px solid #DEDEDE;
+    border-right: 1px solid white;
+}
+
+.sub-grid-left:after{
+    content:'';
+    position: absolute;
+    left: 24px;
+    right: 0px;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: 25px solid white;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(-90deg);
 }
